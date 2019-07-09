@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 0 0;
+    background-color: white;
+}
+
+p a {
+    margin: 0 0 0 0;
+}
+
+header, footer {
+    position: fixed;
+}
+
+header {
+    top: 0;
+    height: 135px;
+    z-index:2;
+    width:100%;
+    
+}
+
+footer {
+    bottom: 0;
+    height: 180px;
+    z-index: 2;
+    width: 100%;
+}
+
+footer a {
+    bottom: 0;
+    height: 180px;
+    z-index: 2;
+    width: 100%;
+}
+
+footer .contact {
+    border-top: 1px solid grey;
+}
+
+.container-index {
+    top: 135px;
+    position: absolute;
+    z-index:1;
+    /*height: calc(100% - 180px);*/
+}
+
+.container-index .copyright{ /*only for the footer*/
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-items: center;
+    height: 45px;
+    color: grey;
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+    align-self: flex-end;
+}
+
+.container-index .table-header {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-items: center;
+    height: 45px;
+    color: blue;
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+}
+
+.container-index .table-content {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-items: center;
+    height: 136px;
+    color: blue;
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+}
+
+.container-index a:last-child {
+border-bottom: 0px;
+}
+
+header a:hover .category, footer a:hover .category{
+    color: white;
+
+}
+
+footer .copyright:hover {
+    background-color: lightgrey;
+    color: black;
+}
+
+footer .contact:hover {
+    background-color: magenta;
+
+}
+
+/* Table */
+.container-index {
+    width: 100%;
+}
+.container-index .table-header:hover {
+    color: black;
+    background-color: white;
+    cursor: default;
+}
+
+.table-header div{
+    font-size: 16px;
+    color: black;
+}
+
+.container-index .table-content:hover {
+    color: white;
+    background-color: blue;
+}
+
+.container-index  .table-header .date, .table-content .date {
+    width: 23.4%;
+    padding: 0 0 0 2%;
+    overflow-y: hidden;
+}
+
+.container-index .table-header .title, .table-content .title{
+    width: 23.4%;
+    overflow-y: hidden;
+}
+
+.container-index .table-header .publisher, .table-content .publisher {
+    width: 23.4% ;
+    overflow-y: hidden;
+}
+
+.container-index .table-header .link, .table-content .link {
+    width: 23.4% ;
+    overflow-y: hidden;
+}
+
+
+
+
+
+
+
+header img{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+
+
+
+/* header and footer */
+header .copyright, footer .copyright { /*only for the footer*/
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-items: center;
+    height: 45px;
+    color: grey;
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+    align-self: flex-end;
+}
+
+header a, footer a {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-items: center;
+    height: 135px;
+    color: blue;
+    border-bottom: 1px solid grey;
+    text-decoration: none;
+    background-color: lightgrey
+}
+
+header a:hover, footer a:hover{
+    color: white;
+    background-color: blue;
+
+}
+header a:hover .category, footer a:hover .category{
+    color: white;
+
+}
+
+header .contact:hover, header .contact:hover {
+    background-color: magenta;
+
+}
+
+header  .category, footer .category {
+    width: 23.4%;
+    padding: 0 0 0 2%;
+    font-size: 24px;
+    color: black;
+}
+
+header .copyright .category, footer .copyright .category {
+    width: 23.4%;
+    padding: 0 0 0 2%;
+    font-size: 16px;
+    color: black;
+}
+
+header .content, footer .content {
+    width: 76.5%;
+    overflow-y: hidden;
+    font-size: 36px;
+    overflow-y: hidden
+}
